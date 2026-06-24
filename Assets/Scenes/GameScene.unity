@@ -3722,7 +3722,7 @@ GameObject:
   - component: {fileID: 2045667622}
   - component: {fileID: 2045667621}
   m_Layer: 0
-  m_Name: BollGegerator
+  m_Name: BallGegerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3740,7 +3740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9171b4c710a9a4ab7fbfab21aa660d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BollGenerator
-  bollPrefab: {fileID: 2355315275198766825, guid: 68aae83f4f605fa4a9f4d06e21cbeda9, type: 3}
+  ballPrefab: {fileID: 2355315275198766825, guid: 68aae83f4f605fa4a9f4d06e21cbeda9, type: 3}
 --- !u!4 &2045667622
 Transform:
   m_ObjectHideFlags: 0

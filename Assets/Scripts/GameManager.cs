@@ -13,11 +13,6 @@ public class GameManager : MonoBehaviour
     private bool isGameOver = false; // ゲームが終了したかどうか
 
     // スコアを増やすための関数
-    public void AddScore(int amount)
-    {
-        score += amount;
-        scoreText.text = "Score: " + score; // 画面の表示
-    }
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,13 +32,19 @@ public class GameManager : MonoBehaviour
         if (timeLimit <= 0)
         {
             timeLimit = 0;
-            GameOver();
+            isGameOver = true;
         }
 
         // 画面のタイマーを更新
         timerText.text = "Time: " + Mathf.FloorToInt(timeLimit).ToString();
     }
+    public void AddScore(int amount)
+    {
+        if (isGameOver) return;
 
+        score += amount;
+        scoreText.text = "Score: " + score; // 画面の表示
+    }
     void GameOver()
     {
         isGameOver = true;
